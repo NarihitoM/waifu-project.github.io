@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Waifu - Waifu Gallery</title>
+</head>
+<body>
+    <header>
+        <div class="classh1">
+            <h1 style="text-align: center;">Waifu Gallery</h1>
+        </div>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="waifu.html">Waifu</a></li>
+                <li><a href="https://narihitom.github.io/narihito-profile.github.io/">Website</a></li>
+            </ul>
+        </nav>
+    </header><br><br>
+    <div class="gallery">
+        <div class="photo">
+            <img src="mamaraiden.webp" alt="Sample 1" onclick="openModal('Raiden Shogun(Ei)', 'The Raiden Shogun is a firm believer of what she believes to be eternity — a place in which everything is kept the same, regardless of what goes on. She is honorable in her conduct and is revered by the people of Inazuma.')">
+            <p>Raiden Shogun</p>
+        </div>
+        <div class="photo">
+            <img src="mamachangli.webp" alt="Sample 2" onclick="openModal('Changli', 'Changli is a counselor serving the Jinzhou Magistrate, and former Secretary-General in the capital. Shrouded in flames, she is fated to burn brightly until her final embers. With her fiery determination and strategic mindset, she rises to power, always thinking ahead to reach her ultimate goal.')">
+            <p>Changli</p>
+        </div>
+        <div class="photo">
+            <img src="mamajingliu.webp" alt="Sample 3" onclick="openModal('Jingliu', 'Former Sword Champion of the Luofu, and the creator of the Cloud Knights legends of undefeated might.Now, her name has been wiped from the records, and she is a traitor of the Xianzhou walking on the fine line between sanity and mara-struck.')">
+            <p>Jingliu</p>
+        </div>
+        <div class="photo">
+            <img src="mamashore.webp" alt="Sample 4" onclick="openModal('Shorekeeper', 'The Shorekeeper of the Black Shores, a mysterious divine being governing the essence of aloofness, emerges in response to your summon. Having spent eons in guardianship, the first stirrings of emotion and desire awaken within her heart, fostering a firm determination to connect with the world — and with you.')">
+            <p>Shorekeeper</p>
+        </div>
+        <div class="photo">
+            <img src="mamaning.webp" alt="Sample 5" onclick="openModal('Ningguang', 'Owner of the Jade Chamber in the skies above Liyue, there are stories abound about Ningguang, with her elegance and mysterious smile.As a Tianquan of the Liyue Qixing, not only does she embody law and order, she also represents fortune and wealth.')">
+            <p>Ningguang</p>
+        </div>
+        <div class="photo">
+            <img src="mommycarlotta.png" alt="Sample 6" onclick="openModal('Carlotta', 'the second daughter of the esteemed Montelli family, embodies innate nobility and a refined appreciation for art. Her elegance is matched by her unconventional spirit, unshackled by tradition.')">
+            <p>Carlotta</p>
+        </div>
+        <div class="photo">
+            <img src="Mommylucia.png" alt="More" onclick="openModal('Lucia', 'Leader of Gray Raven. Attacker,An outstanding soldier, committed to eliminating the infection and paving the way for humanity return.')">
+            <p>Lucia</p>
+        </div>
+        <div class="photo">
+            <img src="" alt="Coming Soon" onclick="openModal('Under Maintenance', 'Stay Tuned')">
+            <p>Coming Soon</p>
+        </div>
+    </div>
+    <div id="photoModal" class="modal">
+        <div class="modal-content">
+            <h2 id="photoTitle"></h2>
+            <p id="photoDescription"></p>
+        </div>
+    </div>
+    <footer>
+        <h2>&copy; Copyright By Narihito.2025</h2>
+    </footer>
+    <script src="waifutest.js"></script>
+</body>
+</html>
+
