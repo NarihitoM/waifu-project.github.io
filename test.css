@@ -185,7 +185,7 @@ footer ul li a:hover {
 }
 
 .ok img {
-    width: 80%;
+    width: 100%;
     height: auto;
     cursor: pointer;
     border: 2px solid #ddd;
@@ -248,7 +248,7 @@ footer ul li a:hover {
     }
 
     .ok img {
-        width: 70%;
+        width: 90%;
         height: auto;
     }
 
@@ -347,8 +347,8 @@ footer ul li a:hover {
         width: 60%;
     }
     .ok img {
-        width: 90%;
-        height: 90%;
+        width: 100%;
+        height: 100%;
     }
     .menu-icon {
         display: block;
