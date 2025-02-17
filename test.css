@@ -20,9 +20,8 @@ header, footer {
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
     flex-grow: 1;
     perspective: 1000;
 }
@@ -337,7 +336,7 @@ footer ul li a:hover {
         font-size: 0.9rem;
     }
     .gallery {
-        gap: 5px;
+        flex-wrap: wrap;
     }
     .modal-content {
         width: 60%;
@@ -405,7 +404,7 @@ footer ul li a:hover {
     }
 
     .gallery {
-        gap: 5px;
+        flex-wrap: wrap;
     }
     .modal-content {
         width: 50%;
