@@ -178,12 +178,10 @@ footer ul li a:hover {
 }
 .ok 
 {
-    display: inline-block;
-    text-align: center;
+    display: block;
     height: 100%;
     width: 100%;
 }
-
 .ok img {
     width: 100%;
     height: 100%;
@@ -274,9 +272,8 @@ footer ul li a:hover {
     .modal-content {
         width: 80%;
     }
-    .gallery
-    {
-        gap:5px;
+    .gallery {
+        gap: 5px;
     }
     .ok img {
         width: 100%;
@@ -329,7 +326,7 @@ footer ul li a:hover {
 
 @media (max-width: 480px) {
     body {
-        font-size: 13px;
+        font-size: 10px;
     }
 
     header h1 {
@@ -339,9 +336,8 @@ footer ul li a:hover {
     footer h2 {
         font-size: 0.9rem;
     }
-    .gallery
-    {
-    gap:5px;
+    .gallery {
+        gap: 5px;
     }
     .modal-content {
         width: 60%;
