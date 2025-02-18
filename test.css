@@ -22,7 +22,9 @@ header, footer {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 1;
+    justify-content: start; 
+    align-items: flex-start; 
+    gap: 10px;
     perspective: 1000;
 }
 
@@ -86,7 +88,7 @@ footer {
     text-align: center;
     bottom: 0;
     width: 100%;
-    position: sticky;
+    position: static;
     margin-top: auto;
 }
 
@@ -112,16 +114,12 @@ footer ul li a:hover {
     text-decoration: lime;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-    margin-top: 3px ;
-}
+
 .photo {
-    display: inline-block;
-    text-align: center;
-    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
 }
 
 .photo img {
@@ -337,6 +335,8 @@ footer ul li a:hover {
     }
     .gallery {
         flex-wrap: wrap;
+        justify-content: center; /* Center the items horizontally */
+        align-items: flex-start; /* Align items to the top */
     }
     .modal-content {
         width: 60%;
@@ -407,11 +407,11 @@ footer ul li a:hover {
         flex-wrap: wrap;
     }
     .modal-content {
-        width: 50%;
+        width: 90%;
     }
     .photo img {
-        width: 90px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
     }
     .menu-icon {
         display: block;
