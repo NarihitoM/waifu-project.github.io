@@ -22,7 +22,7 @@ header, footer {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start; 
+    justify-content: center; 
     align-items: flex-start; 
     gap: 10px;
     perspective: 1000;
@@ -51,7 +51,6 @@ header h1 {
 
 nav {
     text-align: center;
-    margin-top: 10px;
 }
 
 nav ul {
