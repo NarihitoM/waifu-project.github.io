@@ -360,10 +360,10 @@ footer ul li a:hover {
         background-color: #333;
         width: auto;
         position: absolute;
-        top: 80px;
-        right: -10px;
+        top: 65px;
+        right: 0px;
         padding: 0;
-        margin: 10px;
+       
         transition: max-height 0.3s ease-in-out;
         z-index: 1;
         border-radius: 5px;
@@ -383,8 +383,8 @@ footer ul li a:hover {
         padding: 7px;
         width: 100%;
         text-align: center;
-        font-size: 0.8rem;
-        margin: 3px;
+        font-size: 1rem;
+        margin: 1px;
         transition: all 0.5s ease-in-out;
     }
 }
