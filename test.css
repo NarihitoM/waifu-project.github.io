@@ -361,9 +361,9 @@ footer ul li a:hover {
         width: auto;
         position: absolute;
         top: 65px;
-        right: 0px;
+        right: -10px;
         padding: 0;
-       
+        margin:10px;
         transition: max-height 0.3s ease-in-out;
         z-index: 1;
         border-radius: 5px;
@@ -429,9 +429,9 @@ footer ul li a:hover {
         width: auto;
         position: absolute;
         top: 65px;
-        right: 0px;
+        right: -10px;
         padding: 0;
-        
+        margin:10px;
         transition: max-height 0.3s ease-in-out;
         z-index: 1;
         border-radius: 5px;
