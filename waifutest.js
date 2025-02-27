@@ -32,5 +32,21 @@ document.addEventListener('click', function(event) {
         menuIcon.addEventListener('click', () => {
             navUl.classList.toggle('active');
         });
+
+        const photos = document.querySelectorAll('.photo img');
+
+        photos.forEach(photo => {
+            photo.addEventListener('click', () => {
+                const afterElement = photo.parentElement.querySelector('::after');
+                if (afterElement) {
+                    afterElement.style.display = 'block';
+                    setTimeout(() => {
+                        afterElement.style.display = 'none';
+                    }, 2000); 
+                }
+               
+                
+            });
+        });
     });
 })();
