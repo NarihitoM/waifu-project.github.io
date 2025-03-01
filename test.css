@@ -3,7 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+h3
+{
+    background-image: linear-gradient(to right, #ff4107, #000000, #00ffdd, #000000, #ff4107);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: bgposition1 3s infinite linear;
+    background-size: 200%;
+}
 html, body {
     height: 100%;
     display: flex;
@@ -67,6 +75,17 @@ h4
     }
     100% {
         background-position: 150% 100%;
+    }
+}
+@keyframes bgposition1 {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 200% 100%;
     }
 }
 nav {
@@ -160,6 +179,7 @@ footer ul li a:hover {
     transition: transform 0.2s;
     z-index: -1;
     animation: rotate 2s linear infinite;
+    perspective: 1000;
 }
 
 .photo:hover,
@@ -177,7 +197,18 @@ footer ul li a:hover {
         --move: 360deg;
     }
 }
-
+img
+{
+    align-self: center;
+    width: 70%;
+    transition: all 0.3s;
+}
+img:hover
+{
+    transform: scale(1.05);
+    transition: all 0.3s;
+    
+}
 @property --move
 {
     syntax: "<angle>";
@@ -198,6 +229,11 @@ footer ul li a:hover {
     margin-top: 10px;
     font-size: 19px;
     font-weight: 700;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #00f7ff, #000000, #000000, #000000, #000000, #000000, #00f7ff);
+    animation: bgposition 3s infinite linear ;
+    background-size: 300%;
 }
 
 .modal {
@@ -343,6 +379,7 @@ footer ul li a:hover {
     transition: transform 0.2s;
     z-index: -1;
     animation: rotate 2s linear infinite;
+    perspective: 1000;
 }
     h3
     {
@@ -448,6 +485,7 @@ footer ul li a:hover {
     transition: transform 0.2s;
     z-index: -1;
     animation: rotate 2s linear infinite;
+    perspective: 1000;
 }
     .ok img {
         width: 100%;
@@ -487,6 +525,7 @@ footer ul li a:hover {
         transition: transform 0.2s;
         z-index: -1;
         animation: rotate 2s linear infinite;
+        perspective: 1000;
     }
     .gallery {
         flex-wrap: wrap;
