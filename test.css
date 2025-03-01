@@ -304,7 +304,6 @@ footer ul li a:hover {
     nav ul li {
         margin: 10px 0;
     }
-   
     .ok img {
         width: 90%;
         height: auto;
@@ -334,13 +333,13 @@ footer ul li a:hover {
     content: '';
     --move: 0deg;
     position: absolute;
-    top: -3px;
-    left: -2px;
-    width: 117px;
-    height: 117px;
+    top: -5px;
+    left: -4px;
+    width: 120px;
+    height: 120px;
     background-image: conic-gradient(from var(--move), red, transparent, transparent, transparent, purple, transparent, transparent, transparent, red);
     border-radius: 10px;
-    display: none;
+    display: block;
     transition: transform 0.2s;
     z-index: -1;
     animation: rotate 2s linear infinite;
@@ -367,6 +366,10 @@ footer ul li a:hover {
         padding: 10px;
         transition: all 0.5s ease-in-out;
     }  
+    .photo p
+    {
+        font-size: 15px;
+    }
 
     nav ul {
         max-height: 0;
@@ -429,6 +432,23 @@ footer ul li a:hover {
     .modal-content {
         width: 60%;
     }
+    .photo:hover::after,
+.photo:active::after,
+.photo.active::after {
+    content: '';
+    --move: 0deg;
+    position: absolute;
+    top: -5.5px;
+    left: -4px;
+    width: 120px;
+    height: 120px;
+    background-image: conic-gradient(from var(--move), red, transparent, transparent, transparent, purple, transparent, transparent, transparent, red);
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.2s;
+    z-index: -1;
+    animation: rotate 2s linear infinite;
+}
     .ok img {
         width: 100%;
         height: 100%;
@@ -451,7 +471,23 @@ footer ul li a:hover {
     footer h2 {
         font-size: 0.8rem;
     }
-
+    .photo:hover::after,
+    .photo:active::after,
+    .photo.active::after {
+        content: '';
+        --move: 0deg;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 110px;
+        height: 110px;
+        background-image: conic-gradient(from var(--move), red, transparent, transparent, transparent, purple, transparent, transparent, transparent, red);
+        border-radius: 10px;
+        display: block;
+        transition: transform 0.2s;
+        z-index: -1;
+        animation: rotate 2s linear infinite;
+    }
     .gallery {
         flex-wrap: wrap;
     }
@@ -461,6 +497,7 @@ footer ul li a:hover {
     .photo img {
         width: 100px;
         height: 100px;
+        margin: 9px;
     }
     .photo::after {
         display: none;
