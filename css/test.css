@@ -59,7 +59,16 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
+i
+{
+    
+    font-size: 20px;
+    color: transparent;
+    background-clip: text;
+    animation: bgposition 0.5s infinite linear;
+    background-size: 150%;
+    background-image: linear-gradient(to right, #ff0000, #000000, #ff6600, #000000,red);
+}
 h1 {
     font-size: 40px;
     text-align: center;
@@ -483,6 +492,10 @@ img:hover
         height: 40px;
         font-size: 18px;
     }
+    i
+    {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -545,6 +558,10 @@ img:hover
         height: 40px;
         font-size: 18px;
     }
+    i
+    {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -601,5 +618,9 @@ img:hover
         width: 40px;
         height: 40px;
         font-size: 18px;
+    }
+    i
+    {
+        font-size: 15px;
     }
 }

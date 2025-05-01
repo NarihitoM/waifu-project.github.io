@@ -2,6 +2,7 @@ function openModal(title, description) {
     document.getElementById('photoTitle').innerText = title;
     document.getElementById('photoDescription').innerText = description;
     document.getElementById('photoModal').style.display = 'flex';
+    document.body.style.overflow = 'hidden'; 
 }
 
 document.addEventListener('click', function(event) {
@@ -9,6 +10,7 @@ document.addEventListener('click', function(event) {
     const modalContent = document.querySelector('.modal-content');
     if (event.target === modal && !modalContent.contains(event.target)) {
         modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; 
     }
 });
 
